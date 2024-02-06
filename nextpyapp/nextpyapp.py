@@ -46,7 +46,7 @@ class State(xt.State):
                 ):
                     self.result = "Congrats, you have matched all the emojis"
             else:
-                # If the types do not match, hide the emojis again
+                # If the types do not match, hide the emojis again.
                 indices = [e[1][0] for e in self.track]
                 self.emoji_list = [
                     [i,"0%"] if i in indices else [i,opacity]
